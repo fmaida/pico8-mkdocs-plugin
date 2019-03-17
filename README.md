@@ -1,41 +1,20 @@
-# Hello Dolly
+# Pico-8 (MkDocs Plugin)
 
-"Hello Dolly" is a very basic 
-[mkdocs plugin](http://www.mkdocs.org/user-guide/plugins/) that searches in 
-all your mkdocs documents the tag `{{dolly}}` and substitutes it with a 
-random lyrics taken from "Hello Dolly!", the main song of the musical 
-of the same name.
+This [mkdocs plugin](http://www.mkdocs.org/user-guide/plugins/) 
+look in each MkDocs article for the presence of a tag like this:
 
-It was inspired by the once [built-in plugin](https://wordpress.org/plugins/hello-dolly/) 
-of WordPress, and it's main purpose is to help understanding how to write a simple plugin 
-for *mkdocs*.
- 
+{{ pico-8: 12345 }}
 
+Then, it will replace it with a web player that will allow 
+the reader of a page to enjoy pico-8 games through the page.
 
-## Quick start
+To install it, edit your `mkdocs.yml` file 
+and add these few lines of code:
 
-If you want to try this plugin as-it-is, follow these steps:
-
-1. Download this repo and (eventually) unzip it in a folder
-
-2. Inside the project folder, execute the command 
-   `python setup.py develop` to install 
-   the plugin on your local machine. 
-
-3. Go to your mkdocs project folder, edit the `mkdocs.yml` file 
-   and add these few lines at the end:
-
-   ```yaml
-   plugins:
-       - hello-dolly
-   ```
-
-That's it.
-Now, each time you'll write the tag `{{dolly}}` 
-inside any page in your mkdocs document folder, 
-this plugin will substitute that tag with 
-a random lyric taken from the main song of the 
-musical "Hello Dolly".
+```yaml
+plugins:
+   - hello-dolly
+```
 
 ### An example
 
@@ -47,7 +26,7 @@ file and insert the tag in any place, like this:
 
 For full documentation visit [mkdocs.org](http://mkdocs.org).
 
-{{dolly}}
+{{ pico-8: 46052 }}
 
 ## Commands
 ````

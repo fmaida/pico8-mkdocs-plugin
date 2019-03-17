@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='Pico-8',
-    version='1.0.1',
+    version='1.0.0',
     packages=['pico8'],
     url='https://github.com/fmaida/pico8-mkdocs-plugin',
     license='MIT',
@@ -16,7 +16,7 @@ setup(
     # Without them, mkdocs will not be able to recognize it.
     entry_points={
         'mkdocs.plugins': [
-            'hello-dolly = pico8:Pico8',
+            'pico-8 = pico8:Pico8',
         ]
     },
 )
