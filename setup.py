@@ -7,7 +7,7 @@ setup(
     url='https://github.com/fmaida/pico8-mkdocs-plugin',
     license='MIT',
     author='Francesco Maida',
-    author_email='fran@cesco.it',
+    author_email='francesco.maida@gmail.com',
     description='This plugin allows to embed a Pico-8 web player in a mkdocs generated page.',
     install_requires=['mkdocs'],
 
